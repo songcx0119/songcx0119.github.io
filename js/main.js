@@ -467,6 +467,9 @@ var Controls = {
 		var that = this;
 		setTimeout(function () {
 			var rawTime = parseInt(Player.context.currentTime || 0);
+			if (rawTime >= 243) {
+				rawTime = 243;
+			}
 			var secondsInMin = 60;
 			var min = parseInt(rawTime / secondsInMin);
 			var seconds = rawTime - min * secondsInMin;

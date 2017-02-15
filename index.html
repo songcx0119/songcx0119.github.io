@@ -1,124 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html>
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>songcx</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/style.css">
-
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<!--必要样式-->
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<!--[if IE]>
-		<script src="js/html5.js"></script>
-		<![endif]-->
+	<title>Happy Birthday</title>
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-	<div class="container demo-1">
-		<div class="content">
-			<div id="large-header" class="large-header">
-				<div style="position:absolute;left: 370px; top:300px;" class="time" id="time" data-date="" data-hours="" data-minutes="">
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-					<div class="digit">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-				</div>
-
-				<div id="particles-js"></div>
-				<script src="js/particals.min.js"></script>
-				<script src="js/partical_config.js"></script>
-				<video playsinline autoplay muted loop id="bgvid">
-					<source src="video/bg.mp4">
-				</video>
-				<audio autoplay loop>
-					<source src="video/bg.mp3" type="audio/mpeg">
-				</audio>
-			</div>
-		</div>
-
+<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+<div class="player">
+	<canvas></canvas>
+	<div class="song">
+		<div class="artist">Kavinsky</div>
+		<div class="name">Odd Look ft. The Weeknd</div>
 	</div>
-	<!-- /container -->
+	<div class="playarea">
+		<div class="prevSong"></div>
+		<div class="play"></div>
+		<div class="pause"></div>
+		<div class="nextSong"></div>
+	</div>
+	<div class="soundControl"></div>
+	<div class="time">00:00</div>
+</div>
 
-	<script src="js/TweenLite.min.js"></script>
-	<script src="js/EasePack.min.js"></script>
-	<script src="js/rAF.js"></script>
-
-	<script src='js/Rx.min.js'></script>
-	<script src='js/rxcss.min.js'></script>
-	<script src="js/index.js"></script>
-
-</body>
+<script src="js/main.js"></script>
 
 </html>

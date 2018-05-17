@@ -26,6 +26,11 @@ html {
 	right: -256px;
 }
 
+.fixAbsoulte {
+	position: relative;
+	overflow: hidden;
+}
+
 /* Control buttons */
 
 .controls button {
@@ -161,7 +166,9 @@ html {
 }
 
 .audio.audio-player .volume {
-	position: relative;
+	position: absolute;
+	left: 85px;
+	top: 133px;
 }
 
 .audio.audio-player .volume .volume-btn {
@@ -173,13 +180,13 @@ html {
 }
 
 .audio.audio-player .volume .volume-controls {
-	width: 30px;
-	height: 135px;
+	width: 135px;
+	height: 30px;
 	background-color: rgba(0, 0, 0, 0.62);
 	border-radius: 7px;
 	position: absolute;
-	left: -3px;
-	bottom: 52px;
+	left: 40px;
+	bottom: 0;
 	flex-direction: column;
 	align-items: center;
 	display: flex;
@@ -188,23 +195,42 @@ html {
 .audio.audio-player .volume .volume-controls.hidden {
 	display: none;
 }
-
-.audio.audio-player .volume .volume-controls .slider {
-	margin-top: 12px;
-	margin-bottom: 12px;
-	width: 6px;
-	border-radius: 3px;
+.slider {
+	width: 100%;
 }
 
-.audio.audio-player .volume .volume-controls .slider .progress {
-	bottom: 0;
-	height: 100%;
-	width: 6px;
+.volumeBar {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 15px;
+	border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
 }
 
-.audio.audio-player .volume .volume-controls .slider .progress .pin {
-	left: -5px;
-	top: -8px;
+.volumeBar:hover {
+	opacity: 1;
+}
+
+.volumeBar::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #4CAF50;
+	cursor: pointer;
+}
+
+.volumeBar::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #4CAF50;
+	cursor: pointer;
 }
 
 svg,

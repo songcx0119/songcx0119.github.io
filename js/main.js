@@ -1,3 +1,13 @@
+//Resize
+var h = $(".main").height();
+$(".midButton").css("top", h / 2 - 40);
+$(window).resize(function () {
+	var h = $(".main").height();
+	$(".midButton").css("top", h / 2 - 40);
+});
+
+
+//Animiation
 const branchesRandomOrder = $('[id^=BranchGroup]').toArray().sort(function () {
 	return 0.5 - Math.random()
 });

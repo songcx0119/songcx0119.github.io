@@ -6,7 +6,7 @@ var ctx = canvas.getContext("2d");
 var c = ctx;
 var dashedRain = false;
 var rainIntensity = 0.5;
-var maxRadius = 0.2;
+var maxRadius = 1;
 var speed = 5;
 var textMaxSpeed = -0.5;
 var gravity = 0.3;
@@ -169,7 +169,7 @@ Circle.prototype.draw = function () {
 	}
 	ctx.closePath();
 
-	ctx.fillStyle = "#444";
+	ctx.fillStyle = "#fff";
 	ctx.stroke();
 	ctx.fill();
 }

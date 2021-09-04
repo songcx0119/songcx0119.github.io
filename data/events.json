@@ -2831,7 +2831,7 @@
         "event": "锻体。",
         "postEvent": "体质提升。",
         "effect": {
-            "STR": 2
+            "STR": 200
         },
         "include": "(EVT?[10333])&(STR>100)&(TLT?[1048])",
         "exclude": "EVT?[10345,10361]"

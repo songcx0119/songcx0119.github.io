@@ -241,8 +241,8 @@ class App{
             .find('#start')
             .click(()=>{
                 if(total() < this.#totalMax) {
-                    this.hint(`你还有${this.#totalMax-total()}属性点没有分配完`);
-                    return;
+                    //this.hint(`你还有${this.#totalMax-total()}属性点没有分配完`);
+                    //return;
                 } else if (total() > this.#totalMax) {
                     this.hint(`你多使用了${total() - this.#totalMax}属性点`);
                     return;

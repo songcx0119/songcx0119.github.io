@@ -45,7 +45,7 @@ class App{
             <button id="themeToggleBtn">黑</button>
             <div id="title">
                 人生重开模拟器<br>
-                <div style="font-size:1.5rem; font-weight:normal;">这垃圾人生一秒也不想呆了</div>
+                <div style="font-size:1.5rem; font-weight:normal;">songcx这垃圾人生一秒也不想呆了</div>
             </div>
             <button id="restart" class="mainbtn"><span class="iconfont">&#xe6a7;</span>立即重开</button>
         </div>
@@ -134,7 +134,7 @@ class App{
                     this.hint('请选择3个天赋');
                     return;
                 }
-                this.#totalMax = 20 + this.#life.getTalentAllocationAddition(Array.from(this.#talentSelected).map(({id})=>id));
+                this.#totalMax = 40 + this.#life.getTalentAllocationAddition(Array.from(this.#talentSelected).map(({id})=>id));
                 this.switch('property');
             })
 
@@ -327,7 +327,7 @@ class App{
                 this.#life.talentExtend(this.#selectedExtendTalent);
                 this.#selectedExtendTalent = null;
                 this.#talentSelected.clear();
-                this.#totalMax = 20;
+                this.#totalMax = 40;
                 this.#isEnd = false;
                 this.switch('index');
             });
@@ -365,7 +365,7 @@ class App{
                 clear: ()=>{
                     talentPage.find('ul.selectlist').empty();
                     talentPage.find('#random').show();
-                    this.#totalMax = 20;
+                    this.#totalMax = 40;
                 },
             },
             property: {
